@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="nl" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIDI: kaartvoorstellen verkooppunten</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="demos.css">
+<script>document.documentElement.className = 'js';</script>
+</head>
+<body class="demo-body">
+
+<header class="demo-bar">
+  <div class="demo-bar__in">
+    <img src="assets/brand/logo-aidi.png" alt="AIDI" width="433" height="225">
+    <div>
+      <strong>Verkooppunten op de kaart</strong>
+      <span>3 voorstellen, elk land apart. 54 van de 59 adressen staan op de kaart.</span>
+    </div>
+    <label class="demo-motion"><input type="checkbox" id="forceMotion"> Animaties forceren</label>
+    <a class="demo-replay" href="demos.html">Hero &amp; seizoen</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ---------------------------------------------------------- KAART A -- -->
+<div class="demo-label">
+  <b>Kaart A</b><span>Eigen kaart per land</span>
+  <em>Getekend in de huisstijl, zonder externe kaartdienst: geen cookies, geen toestemmingsvraag, laadt meteen. Klik een land, klik een stip. Onder de kaart staat de lijst van dat land.</em>
+</div>
+<section class="section band dm" id="mapA">
+  <div class="wrap">
+    <div class="head"><div class="head__text">
+      <h2>Waar koopt u AIDI?</h2>
+      <p class="lede">Ruim zestig winkels en invoerders in elf landen. Kies een land.</p>
+    </div></div>
+    <div class="mk__tabs" role="tablist" aria-label="Land"></div>
+    <div class="mk mk--single">
+      <figure class="mk__stage">
+        <svg class="mk__svg" viewBox="0 0 100 100" role="img" aria-label="Kaart met verkooppunten"></svg>
+        <figcaption class="mk__tip" hidden></figcaption>
+      </figure>
+      <div class="mk__list" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ---------------------------------------------------------- KAART B -- -->
+<div class="demo-label">
+  <b>Kaart B</b><span>Kaart naast de lijst</span>
+  <em>Dezelfde kaart, maar naast een scrollbare lijst die meebeweegt. Beweeg over een winkel in de lijst en de stip licht op, en omgekeerd. Het snelst om echt een winkel te vinden.</em>
+</div>
+<section class="section dm" id="mapB">
+  <div class="wrap">
+    <div class="head"><div class="head__text">
+      <h2>Vind een verkooppunt</h2>
+      <p class="lede">Zoek op naam of gemeente, of klik op de kaart.</p>
+    </div></div>
+    <div class="mk__tabs" role="tablist" aria-label="Land"></div>
+    <div class="mk mk--split">
+      <figure class="mk__stage">
+        <svg class="mk__svg" viewBox="0 0 100 100" role="img" aria-label="Kaart met verkooppunten"></svg>
+        <figcaption class="mk__tip" hidden></figcaption>
+      </figure>
+      <div class="mk__panel">
+        <div class="search mk__search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+          <label class="visually-hidden" for="mkq">Zoek op winkel of gemeente</label>
+          <input type="search" id="mkq" placeholder="Zoek op winkel of gemeente" autocomplete="off">
+        </div>
+        <div class="mk__scroll" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ---------------------------------------------------------- KAART C -- -->
+<div class="demo-label">
+  <b>Kaart C</b><span>Echte straatkaart</span>
+  <em>OpenStreetMap met zoom en straatnamen: de bezoeker ziet precies waar de winkel ligt en kan doorklikken naar een routebeschrijving. Nadeel: de kaarttegels komen van een externe dienst, dus dit vraagt een vermelding in de cookie- en privacyverklaring.</em>
+</div>
+<section class="section band dm" id="mapC">
+  <div class="wrap">
+    <div class="head"><div class="head__text">
+      <h2>Verkooppunten in detail</h2>
+      <p class="lede">Zoom in tot op straatniveau en klik een winkel aan voor de gegevens.</p>
+    </div></div>
+    <div class="mk__tabs" role="tablist" aria-label="Land"></div>
+    <div class="mk__leaflet" id="leafletMap"></div>
+    <p class="mk__note">Kaartgegevens &copy; OpenStreetMap-bijdragers.</p>
+  </div>
+</section>
+
+<div class="demo-end">
+  <p><b>Welke kaart wilt u?</b> A en B gebruiken geen externe dienst en zijn dus het eenvoudigst qua privacy. C is het handigst voor wie echt de weg zoekt.</p>
+  <p class="demo-note">Vijf invoerders (Groot-Brittannië, de VS, Tsjechië en Polen) hebben alleen een telefoonnummer en e-mailadres, geen straatadres. Die staan onder de kaart in een aparte lijst in plaats van als stip.</p>
+</div>
+
+</main>
+
+<script src="data.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="demos-kaart.js"></script>
+</body>
+</html>

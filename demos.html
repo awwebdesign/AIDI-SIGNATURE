@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="nl" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIDI: ontwerpvoorstellen hero en seizoen</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="demos.css">
+<script>document.documentElement.className = 'js';</script>
+</head>
+<body class="demo-body">
+
+<header class="demo-bar">
+  <div class="demo-bar__in">
+    <img src="assets/brand/logo-aidi.png" alt="AIDI" width="433" height="225">
+    <div>
+      <strong>Ontwerpvoorstellen</strong>
+      <span>3 hero's, 5 seizoensecties. Alles werkt live: scroll, hover en klik gerust.</span>
+    </div>
+    <label class="demo-motion"><input type="checkbox" id="forceMotion"> Animaties forceren</label>
+    <button type="button" class="demo-replay" id="replay">Animaties opnieuw</button>
+  </div>
+</header>
+
+<main>
+
+<!-- ==================================================== HERO VARIANTS == -->
+<p class="demo-group">Hero</p>
+
+<!-- ---------------------------------------------------------- HERO A -- -->
+<div class="demo-label">
+  <b>Hero A</b><span>Volvlak graanfoto</span>
+  <em>De mengeling zelf vult het scherm. Het meest directe: je ziet meteen waar het over gaat. De cijfers lopen als een strip onderaan mee.</em>
+</div>
+<section class="dh dh-a on-dark" data-anim="a">
+  <div class="dh-a__media">
+    <img src="assets/products/aidi-mix-3.jpg" alt="AIDI Mix 3" width="700" height="525">
+  </div>
+  <div class="wrap dh-a__inner">
+    <h1 class="dh-a__h1">
+      <span class="ln"><i>Uw duiven zijn</i></span>
+      <span class="ln"><i><em>atleten</em>.</i></span>
+      <span class="ln"><i>Voeder ze ernaar.</i></span>
+    </h1>
+    <p class="lede dh-a__lede">Tien mengelingen, veertien supplementen, en bij elk product de gemeten waarden. Geen beloftes, cijfers.</p>
+    <div class="btn-row dh-a__cta">
+      <a class="btn btn--signal" href="voeders.html">Ontdek het gamma</a>
+      <a class="btn btn--outline" href="verkooppunten.html">Vind een verkooppunt</a>
+    </div>
+  </div>
+  <div class="dh-a__strip">
+    <div class="wrap dh-a__striprow">
+      <span class="dh-a__now">In beeld: <b>AIDI Mix 3</b></span>
+      <span class="macro dh-a__macro">
+        <span class="macro__track" data-draw>
+          <span class="macro__seg macro__seg--fat" style="width:17.36%"></span>
+          <span class="macro__seg macro__seg--pro" style="width:17.91%"></span>
+          <span class="macro__seg macro__seg--carb" style="width:64.73%"></span>
+        </span>
+      </span>
+      <span class="dh-a__figs">
+        <span><i>Ruw vet</i><em><b data-count="13.5" data-dec="1">13,5</b>%</em></span>
+        <span><i>Ruw eiwit</i><em><b data-count="14.0" data-dec="1">14,0</b>%</em></span>
+        <span><i>Energie</i><em><b data-count="3695" data-dec="0">3.695</b> kcal</em></span>
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- ---------------------------------------------------------- HERO B -- -->
+<div class="demo-label">
+  <b>Hero B</b><span>Gedeeld scherm</span>
+  <em>Harde verticale scheiding: links de boodschap op marineblauw, rechts de foto van rand tot rand. Rustiger dan A, met meer aandacht voor de tekst.</em>
+</div>
+<section class="dh dh-b" data-anim="b">
+  <div class="dh-b__copy on-dark">
+    <div class="dh-b__copyin">
+      <h1 class="dh-b__h1">
+        <span class="ln"><i>Uw duiven zijn</i></span>
+        <span class="ln"><i><em>atleten</em>.</i></span>
+        <span class="ln"><i>Voeder ze ernaar.</i></span>
+      </h1>
+      <p class="lede">AIDI is het voedingsconcept van Team Noël-Willockx. Bij elk product staan de gemeten waarden.</p>
+      <div class="btn-row">
+        <a class="btn btn--signal" href="voeders.html">Ontdek het gamma</a>
+        <a class="btn btn--outline" href="verkooppunten.html">Vind een verkooppunt</a>
+      </div>
+      <div class="dh-b__facts">
+        <div><b data-count="45" data-dec="0">45</b><span>jaar expertise</span></div>
+        <div><b data-count="27" data-dec="0">27</b><span>producten</span></div>
+        <div><b data-count="11" data-dec="0">11</b><span>landen</span></div>
+      </div>
+    </div>
+  </div>
+  <figure class="dh-b__media">
+    <img src="assets/products/aidi-long-distance-mix.jpg" alt="AIDI Long Distance Mix" width="700" height="525">
+    <figcaption>
+      <span class="dh-b__name">AIDI Long Distance Mix</span>
+      <span class="macro">
+        <span class="macro__track" data-draw>
+          <span class="macro__seg macro__seg--fat" style="width:18.44%"></span>
+          <span class="macro__seg macro__seg--pro" style="width:21.50%"></span>
+          <span class="macro__seg macro__seg--carb" style="width:59.92%"></span>
+        </span>
+        <span class="macro__key">
+          <span class="macro__item"><span class="macro__swatch" style="background:var(--m-fat)"></span>Vet <span class="macro__val">14,5%</span></span>
+          <span class="macro__item"><span class="macro__swatch" style="background:var(--m-pro)"></span>Eiwit <span class="macro__val">16,9%</span></span>
+          <span class="macro__item"><span class="macro__swatch" style="background:var(--m-carb)"></span>Koolh. <span class="macro__val">47,1%</span></span>
+        </span>
+      </span>
+    </figcaption>
+  </figure>
+</section>
+
+<!-- ---------------------------------------------------------- HERO C -- -->
+<div class="demo-label">
+  <b>Hero C</b><span>Het hele gamma in één blik</span>
+  <em>De tien mengelingen meteen naast elkaar, gesorteerd van koolhydraatrijk naar vetrijk. Het meest eigenzinnige: geen enkele concurrent kan dit tonen. Hover over een balk.</em>
+</div>
+<section class="dh dh-c on-dark" data-anim="c">
+  <div class="wrap dh-c__grid">
+    <div class="dh-c__copy">
+      <h1 class="dh-c__h1">
+        <span class="ln"><i>Tien mengelingen.</i></span>
+        <span class="ln"><i><em>Tien profielen</em>.</i></span>
+      </h1>
+      <p class="lede">Van sprint tot overnachtfond. Elke mengeling met haar gemeten vet-, eiwit- en koolhydraatgehalte, zodat u kunt kiezen in plaats van geloven.</p>
+      <div class="btn-row">
+        <a class="btn btn--signal" href="voeders.html">Ontdek het gamma</a>
+        <a class="btn btn--outline" href="verkooppunten.html">Vind een verkooppunt</a>
+      </div>
+    </div>
+    <div class="dh-c__chart" role="list">
+      <!-- rows are rendered from data.js so the numbers are always the real ones -->
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================== SEASON VARIANTS == -->
+<p class="demo-group">Seizoen, naast elkaar</p>
+
+<!-- ------------------------------------------------------- SEIZOEN 1 -- -->
+<div class="demo-label">
+  <b>Seizoen 1</b><span>Tijdlijn met knooppunten</span>
+  <em>De vier fases als één doorlopend jaar. De lijn vult zich terwijl u scrollt. Leest echt als een cyclus in plaats van vier losse vakjes.</em>
+</div>
+<section class="section band ds" data-anim="s1">
+  <div class="wrap">
+    <div class="head"><div class="head__text">
+      <h2>Een duif heeft niet het hele jaar hetzelfde nodig</h2>
+      <p class="lede">Het gamma volgt het seizoen. Elke fase stelt andere eisen aan brandstof, bouwstoffen en herstel.</p>
+    </div></div>
+
+    <div class="s1">
+      <div class="s1__rail"><span class="s1__fill"></span></div>
+      <div class="s1__row">
+        <article class="s1__step">
+          <span class="s1__node"><i></i></span>
+          <span class="s1__n">01</span><span class="s1__when">nov, dec</span>
+          <h3>Winter &amp; rust</h3>
+          <p>Veel ruwvezel, weinig vet. Ongelimiteerd te voederen zonder dat duiven aanvetten.</p>
+          <a class="arrow-link" href="voeders.html#aidi-winter-rust">AIDI Winter/Rust <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+        </article>
+        <article class="s1__step">
+          <span class="s1__node"><i></i></span>
+          <span class="s1__n">02</span><span class="s1__when">jan, mrt</span>
+          <h3>Kweek</h3>
+          <p>Hoog gediversifieerd opneembaar eiwit voor de jongen, zonder de ouderdieren uit te putten.</p>
+          <a class="arrow-link" href="voeders.html#aidi-super-kweek">AIDI Super Kweek <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+        </article>
+        <article class="s1__step">
+          <span class="s1__node"><i></i></span>
+          <span class="s1__n">03</span><span class="s1__when">apr, aug</span>
+          <h3>Vlucht</h3>
+          <p>Vijf vliegmengelingen, van snelheidsvlucht tot overnachtfond. Elk met een eigen macroprofiel.</p>
+          <a class="arrow-link" href="voeders.html">Vijf mengelingen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+        </article>
+        <article class="s1__step">
+          <span class="s1__node"><i></i></span>
+          <span class="s1__n">04</span><span class="s1__when">aug, okt</span>
+          <h3>Rui</h3>
+          <p>Verhoogd aandeel aminozuren en een goede omega-verhouding voor een vlekkeloze pluimkwaliteit.</p>
+          <a class="arrow-link" href="voeders.html#aidi-super-rui">AIDI Super Rui <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ------------------------------------------------------- SEIZOEN 2 -- -->
+<div class="demo-label">
+  <b>Seizoen 2</b><span>Grote schaduwcijfers</span>
+  <em>Dichtst bij wat er nu staat, maar met veel meer grafische kracht: het cijfer wordt een vormelement in plaats van een labeltje.</em>
+</div>
+<section class="section ds" data-anim="s2">
+  <div class="wrap">
+    <div class="head"><div class="head__text">
+      <h2>Een duif heeft niet het hele jaar hetzelfde nodig</h2>
+      <p class="lede">Het gamma volgt het seizoen. Elke fase vraagt een andere mengeling.</p>
+    </div></div>
+    <div class="s2">
+      <a class="s2__step" href="voeders.html#aidi-winter-rust">
+        <span class="s2__ghost">01</span>
+        <span class="s2__body"><h3>Winter &amp; rust</h3><p>Veel ruwvezel, weinig vet. Ongelimiteerd te voederen zonder dat duiven aanvetten.</p><span class="s2__go">AIDI Winter/Rust</span></span>
+      </a>
+      <a class="s2__step" href="voeders.html#aidi-super-kweek">
+        <span class="s2__ghost">02</span>
+        <span class="s2__body"><h3>Kweek</h3><p>Hoog gediversifieerd opneembaar eiwit voor de jongen, zonder de ouderdieren uit te putten.</p><span class="s2__go">AIDI Super Kweek</span></span>
+      </a>
+      <a class="s2__step" href="voeders.html">
+        <span class="s2__ghost">03</span>
+        <span class="s2__body"><h3>Vlucht</h3><p>Vijf vliegmengelingen, van snelheidsvlucht tot overnachtfond, elk met een eigen profiel.</p><span class="s2__go">Vijf mengelingen</span></span>
+      </a>
+      <a class="s2__step" href="voeders.html#aidi-super-rui">
+        <span class="s2__ghost">04</span>
+        <span class="s2__body"><h3>Rui</h3><p>Verhoogd aandeel aminozuren en een goede omega-verhouding voor een vlekkeloze pluim.</p><span class="s2__go">AIDI Super Rui</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ------------------------------------------------------- SEIZOEN 3 -- -->
+<div class="demo-label">
+  <b>Seizoen 3</b><span>Fotokolommen</span>
+  <em>Elke fase krijgt de foto van haar eigen mengeling, met het cijfer over de foto. Koppelt het seizoen meteen aan een concreet product.</em>
+</div>
+<section class="section band ds" data-anim="s3">
+  <div class="wrap">
+    <div class="head"><div class="head__text">
+      <h2>Een duif heeft niet het hele jaar hetzelfde nodig</h2>
+      <p class="lede">Vier fases, vier mengelingen. Het gamma volgt het seizoen.</p>
+    </div></div>
+    <div class="s3">
+      <a class="s3__step" href="voeders.html#aidi-winter-rust">
+        <span class="s3__media"><img src="assets/products/aidi-winterrust.jpg" alt="" loading="lazy" width="700" height="525"><span class="s3__n">01</span></span>
+        <h3>Winter &amp; rust</h3><p>Veel ruwvezel, weinig vet. Ongelimiteerd te voederen zonder aanvetten.</p>
+        <span class="s3__mix">AIDI Winter/Rust <b>3.259</b> kcal</span>
+      </a>
+      <a class="s3__step" href="voeders.html#aidi-super-kweek">
+        <span class="s3__media"><img src="assets/products/aidi-super-kweek.jpg" alt="" loading="lazy" width="700" height="525"><span class="s3__n">02</span></span>
+        <h3>Kweek</h3><p>Hoog opneembaar eiwit voor de jongen, zonder de ouderdieren uit te putten.</p>
+        <span class="s3__mix">AIDI Super Kweek <b>3.608</b> kcal</span>
+      </a>
+      <a class="s3__step" href="voeders.html">
+        <span class="s3__media"><img src="assets/products/aidi-mix-3.jpg" alt="" loading="lazy" width="700" height="525"><span class="s3__n">03</span></span>
+        <h3>Vlucht</h3><p>Vijf mengelingen, van snelheidsvlucht tot overnachtfond.</p>
+        <span class="s3__mix">o.a. AIDI Mix 3 <b>3.695</b> kcal</span>
+      </a>
+      <a class="s3__step" href="voeders.html#aidi-super-rui">
+        <span class="s3__media"><img src="assets/products/aidi-super-rui.jpg" alt="" loading="lazy" width="700" height="525"><span class="s3__n">04</span></span>
+        <h3>Rui</h3><p>Meer aminozuren en een goede omega-verhouding voor een vlekkeloze pluim.</p>
+        <span class="s3__mix">AIDI Super Rui <b>3.586</b> kcal</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<p class="demo-group">Seizoen, onder elkaar</p>
+
+<!-- ------------------------------------------------------- SEIZOEN 4 -- -->
+<div class="demo-label">
+  <b>Seizoen 4</b><span>Volle rijen met profiel</span>
+  <em>Onder elkaar, in dezelfde rijvorm als de productlijsten. Elke fase toont meteen het macroprofiel van haar mengeling: u ziet het jaar veranderen.</em>
+</div>
+<section class="section ds" data-anim="s4">
+  <div class="wrap">
+    <div class="head"><div class="head__text">
+      <h2>Een duif heeft niet het hele jaar hetzelfde nodig</h2>
+      <p class="lede">Vier fases, elk met een eigen verhouding vet, eiwit en koolhydraten.</p>
+    </div></div>
+    <div class="s4">
+      <a class="s4__row" href="voeders.html#aidi-winter-rust">
+        <span class="s4__n">01</span>
+        <span class="s4__main"><h3>Winter &amp; rust</h3><p>Veel ruwvezel, weinig vet. Ongelimiteerd te voederen zonder dat duiven aanvetten.</p></span>
+        <span class="s4__data">
+          <span class="s4__mix">AIDI Winter/Rust</span>
+          <span class="macro"><span class="macro__track" data-draw>
+            <span class="macro__seg macro__seg--fat" style="width:8.57%"></span>
+            <span class="macro__seg macro__seg--pro" style="width:14.24%"></span>
+            <span class="macro__seg macro__seg--carb" style="width:77.19%"></span>
+          </span></span>
+          <span class="s4__figs"><b data-count="6.8" data-dec="1">6,8</b>% vet · <b data-count="61.3" data-dec="1">61,3</b>% koolh.</span>
+        </span>
+      </a>
+      <a class="s4__row" href="voeders.html#aidi-super-kweek">
+        <span class="s4__n">02</span>
+        <span class="s4__main"><h3>Kweek</h3><p>Hoog gediversifieerd opneembaar eiwit voor de jongen, zonder de ouderdieren uit te putten.</p></span>
+        <span class="s4__data">
+          <span class="s4__mix">AIDI Super Kweek</span>
+          <span class="macro"><span class="macro__track" data-draw>
+            <span class="macro__seg macro__seg--fat" style="width:16.35%"></span>
+            <span class="macro__seg macro__seg--pro" style="width:20.94%"></span>
+            <span class="macro__seg macro__seg--carb" style="width:62.71%"></span>
+          </span></span>
+          <span class="s4__figs"><b data-count="12.8" data-dec="1">12,8</b>% vet · <b data-count="16.4" data-dec="1">16,4</b>% eiwit</span>
+        </span>
+      </a>
+      <a class="s4__row" href="voeders.html">
+        <span class="s4__n">03</span>
+        <span class="s4__main"><h3>Vlucht</h3><p>Vijf vliegmengelingen, van snelheidsvlucht tot overnachtfond. Elk met een eigen macroprofiel.</p></span>
+        <span class="s4__data">
+          <span class="s4__mix">o.a. AIDI Mix 3</span>
+          <span class="macro"><span class="macro__track" data-draw>
+            <span class="macro__seg macro__seg--fat" style="width:17.36%"></span>
+            <span class="macro__seg macro__seg--pro" style="width:17.91%"></span>
+            <span class="macro__seg macro__seg--carb" style="width:64.73%"></span>
+          </span></span>
+          <span class="s4__figs"><b data-count="13.5" data-dec="1">13,5</b>% vet · <b data-count="3695" data-dec="0">3.695</b> kcal</span>
+        </span>
+      </a>
+      <a class="s4__row" href="voeders.html#aidi-super-rui">
+        <span class="s4__n">04</span>
+        <span class="s4__main"><h3>Rui</h3><p>Verhoogd aandeel aminozuren en een goede omega-verhouding voor een vlekkeloze pluimkwaliteit.</p></span>
+        <span class="s4__data">
+          <span class="s4__mix">AIDI Super Rui</span>
+          <span class="macro"><span class="macro__track" data-draw>
+            <span class="macro__seg macro__seg--fat" style="width:16.72%"></span>
+            <span class="macro__seg macro__seg--pro" style="width:19.46%"></span>
+            <span class="macro__seg macro__seg--carb" style="width:63.32%"></span>
+          </span></span>
+          <span class="s4__figs"><b data-count="15.1" data-dec="1">15,1</b>% eiwit · <b data-count="3.6" data-dec="1">3,6</b> omega</span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ------------------------------------------------------- SEIZOEN 5 -- -->
+<div class="demo-label">
+  <b>Seizoen 5</b><span>Verticale tijdlijn met foto</span>
+  <em>Onder elkaar als een echt jaarverloop: de lijn loopt mee met de scroll. Rustig, en er is plaats voor meer uitleg per fase.</em>
+</div>
+<section class="section band ds" data-anim="s5">
+  <div class="wrap">
+    <div class="head"><div class="head__text">
+      <h2>Het jaar van een duif, fase per fase</h2>
+      <p class="lede">Van winterrust tot rui. Elke fase met haar eigen mengeling en haar eigen reden.</p>
+    </div></div>
+    <ol class="s5">
+      <span class="s5__rail"><span class="s5__fill"></span></span>
+      <li class="s5__item">
+        <span class="s5__dot">01</span>
+        <div class="s5__card">
+          <div class="s5__txt">
+            <span class="s5__when">november, december</span>
+            <h3>Winter &amp; rust</h3>
+            <p>Veel ruwe celstof in de vorm van diverse ruwvezels houdt de spijsvertering optimaal en heeft een reinigende werking. Ongelimiteerd te voederen zonder dat de duiven aanvetten.</p>
+            <a class="arrow-link" href="voeders.html#aidi-winter-rust">AIDI Winter/Rust <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+          </div>
+          <span class="s5__media"><img src="assets/products/aidi-winterrust.jpg" alt="" loading="lazy" width="700" height="525"></span>
+        </div>
+      </li>
+      <li class="s5__item">
+        <span class="s5__dot">02</span>
+        <div class="s5__card">
+          <div class="s5__txt">
+            <span class="s5__when">januari, maart</span>
+            <h3>Kweek</h3>
+            <p>Het hoge, gediversifieerde opneembare eiwitgehalte levert alle bouwstoffen om jongen probleemloos te laten opgroeien, terwijl de ouderdieren in conditie blijven.</p>
+            <a class="arrow-link" href="voeders.html#aidi-super-kweek">AIDI Super Kweek <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+          </div>
+          <span class="s5__media"><img src="assets/products/aidi-super-kweek.jpg" alt="" loading="lazy" width="700" height="525"></span>
+        </div>
+      </li>
+      <li class="s5__item">
+        <span class="s5__dot">03</span>
+        <div class="s5__card">
+          <div class="s5__txt">
+            <span class="s5__when">april, augustus</span>
+            <h3>Vlucht</h3>
+            <p>Vijf vliegmengelingen, van een sprintmix met 67% koolhydraten tot een fondmix met 14,5% vet. Week na week de juiste brandstof voor de afstand die op het programma staat.</p>
+            <a class="arrow-link" href="voeders.html">Bekijk de vijf mengelingen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+          </div>
+          <span class="s5__media"><img src="assets/products/aidi-mix-3.jpg" alt="" loading="lazy" width="700" height="525"></span>
+        </div>
+      </li>
+      <li class="s5__item">
+        <span class="s5__dot">04</span>
+        <div class="s5__card">
+          <div class="s5__txt">
+            <span class="s5__when">augustus, oktober</span>
+            <h3>Rui</h3>
+            <p>De verhoogde eiwitbehoefte tijdens de rui vraagt een grote diversiteit aan benutbare eiwitten en een goede omega 3-6 verhouding. Het resultaat is een vlekkeloze pluimkwaliteit.</p>
+            <a class="arrow-link" href="voeders.html#aidi-super-rui">AIDI Super Rui <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+          </div>
+          <span class="s5__media"><img src="assets/products/aidi-super-rui.jpg" alt="" loading="lazy" width="700" height="525"></span>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<div class="demo-end">
+  <p><b>Laat weten welke hero en welke seizoensectie u wilt.</b> U mag ook mengen, bijvoorbeeld Hero B met Seizoen 4. Daarna bouw ik ze in de echte site, in alle vijf de talen.</p>
+  <p class="demo-note">De maanden bij Seizoen 1 en 5 zijn een gangbare Belgische seizoensindeling. Laat Eddy ze even nakijken voor we ze definitief zetten.</p>
+</div>
+
+</main>
+
+<script src="data.js"></script>
+<script src="demos.js"></script>
+</body>
+</html>

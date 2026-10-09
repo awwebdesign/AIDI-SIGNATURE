@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "aidi",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8324"],
+      "port": 8324
+    }
+  ]
+}
